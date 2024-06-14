@@ -10,7 +10,6 @@ export default function ProductDetail({
 }: {
   params: { productId: string; reviewId: string };
 }) {
-  // Throw error 50% of the time
   const random = getRandomInt(2);
   if (random === 1) {
     throw new Error("Error loading review");
